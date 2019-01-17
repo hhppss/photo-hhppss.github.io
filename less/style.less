@@ -1,0 +1,536 @@
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../font/GothamRounded-Bold.eot');
+    src: url('../font/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/GothamRounded-Bold.woff2') format('woff2'),
+        url('../font/GothamRounded-Bold.woff') format('woff'),
+        url('../font/GothamRounded-Bold.ttf') format('truetype'),
+        url('../font/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../font/GothamRounded-Light.eot');
+    src: url('../font/GothamRounded-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/GothamRounded-Light.woff2') format('woff2'),
+        url('../font/GothamRounded-Light.woff') format('woff'),
+        url('../font/GothamRounded-Light.ttf') format('truetype'),
+        url('../font/GothamRounded-Light.svg#GothamRounded-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded Book';
+    src: url('../font/GothamRounded-Book.eot');
+    src: url('../font/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+        url('../font/GothamRounded-Book.woff2') format('woff2'),
+        url('../font/GothamRounded-Book.woff') format('woff'),
+        url('../font/GothamRounded-Book.ttf') format('truetype'),
+        url('../font/GothamRounded-Book.svg#GothamRounded-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@color-btn: #16a085;
+@light-gray: #f5f6f7;
+@light: #fff;
+
+* {
+    outline: none;
+}
+
+.gotham-bold(){
+	font-family: 'Gotham Rounded', sans-serif;
+	font-weight: bold;
+}
+
+.gotham-light {
+	font-family: 'Gotham Rounded', sans-serif;
+	font-weight: 300;
+}
+
+.gotham-regular {
+	font-family: 'Gotham Rounded Book', sans-serif;
+	font-weight: normal;
+}
+
+.text-title {
+    h2 {
+        color: @color-btn;
+        .gotham-bold();
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+    }
+}
+
+.text-content {
+    color: #373737;
+    .gotham-regular ();
+    font-size: 1.2rem;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+}
+
+body {
+	font-size: 100%;
+}
+
+
+// HEADER
+header {
+	background: url(../img/bg_header.jpg) 50% 100% no-repeat ;
+	background-size: cover;
+	min-height: 74rem;
+}
+.navbar-item {
+	text-align: center;
+	text-decoration: none;
+	margin-top: 4rem;
+	li {
+		a {
+			vertical-align: bottom;
+			color: @light;
+			text-decoration: none;
+		}
+	display: inline;
+	padding: 3rem;
+	.gotham-bold();
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: 2.4px;
+    }
+}
+
+.header-title {
+    margin-top: 24rem;
+    text-align: center;
+    h1 {
+        color: @light;
+        .gotham-bold();
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        letter-spacing: 5.4px;
+    }
+    p {
+        .gotham-regular();
+        color: #ffffff;
+        font-size: 1.6rem;
+        letter-spacing: 2.4px; 
+    }
+}
+.header-btn {
+    margin-top: 2.5rem;
+    width: 16rem;
+    height: 5rem;
+    border-radius: 3px;
+    background-color: @color-btn;
+    color: #ffffff;
+    .gotham-bold();
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+
+}
+.social-icon {
+    text-align: center;
+    ul {
+        padding: 0;
+    }
+    li {
+        display: inline;
+        padding: 5px;
+    }
+    i {
+        color: @light;
+        font-size: 2.5rem;
+    }
+    margin: 22rem 0 2rem 0;
+}
+
+
+.box-1 {
+    width: 100%;
+    min-height: 60rem;
+    background-color: @light-gray;
+    position: relative;
+    .phone-hand {
+        display: inline-block;
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        right: 0;
+        margin-right: 10rem;
+        img {
+            background-size: cover;
+        }
+    }
+    .text-container {
+        z-index: 1;
+        background-color: rgba(245, 246, 247, 0.8);
+        border-radius: 15px;
+        padding: 3rem;
+    }
+    .box-1-title {
+        
+    }
+    .box-1-content{
+        margin-top: 4rem;
+    }
+}
+
+.box-2 {
+    width: 100%;
+    min-height: 65rem;
+    background-color: @light;
+    position: relative;
+    .phone {
+        display: inline-block;
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left: 5;
+        margin-left: -15px;
+        img {
+            background-size: cover;
+        }
+    }
+    
+}
+.box-2-content {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    
+}
+.slider_item {
+    margin-top: 14rem;
+    outline: none;
+}
+
+.box-3 {
+    width: 100%;
+    min-height: 48rem;
+    background-color: @light-gray;
+    position: relative;
+}
+.block-content-3 {
+    margin-top: 8rem;
+}
+.content-box-3 {
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    vertical-align: center;
+    text-align: center;
+}
+.slider-photo {
+    margin-bottom: 10rem;
+}
+
+.box-4 {
+    min-height: 79rem;
+    background: url(../img/iphone-bg.jpg) no-repeat 10% 100%;
+    background-size: cover;
+    p {
+        color: #ffffff;
+        .gotham-bold();
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 3.6px;
+        margin-top: 35rem;
+    }
+    .input-subs {
+        height: 5rem;
+        max-width: 28rem;
+        border: none;
+        border-radius: 5px 0px 0px 5px;
+        color: #373737;
+        .gotham-regular();
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+        padding-left: 20px;
+
+    }
+    .btn-subs {
+        height: 5rem;
+        width: 5rem;
+        background-color: @color-btn;
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        margin-left: -3px;
+        padding-top: 0;
+    }
+    i {
+        font-size: 1.6rem;
+        color: @light;
+    }
+}
+
+
+.box-5 {
+    min-height: 40rem;
+    text-align: center;
+    background-color: @light-gray;
+}
+
+.apps-title {
+    .gotham-bold();
+    color: #373737;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.apps-text {
+     margin-top: 9rem;
+    p {
+        margin: 16px auto;
+        max-width: 84rem;
+        color: #373737;
+        .gotham-light();
+        font-size: 1.2rem;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+    }
+}
+.apps-btn {
+    margin-top: 5rem;
+}
+.apps-btn_first, .app-btn_second {
+    display: inline;
+    padding: 2rem;
+}
+.apps-btn-apple {
+    height: 5rem;
+    width: 24rem;
+    margin-right: -2px;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: -2px;
+    .gotham-regular();
+    font-size: 1.8rem;
+    color: @light;
+}
+.apps-btn-apple_fa {
+    height: 5rem;
+    width: 5rem;
+    background-color: #16a085;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -2px;
+    i {
+        margin-top: 0.3rem;
+        line-height: 0rem;
+        font-size: 2.5rem;
+        color: @light; 
+    }
+}
+
+footer {
+    min-height: 10rem; 
+    background-color: @light;
+    img {
+        margin-top: 3rem;
+    }
+}
+.footer-item {
+    margin-top: 4.5rem;
+    p {
+        color: #16a085;
+        letter-spacing: 2.1px;
+        font-size: 1.4rem;
+        display: inline;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        display: inline;
+        list-style-type: none;
+        color: #373737;
+        .gotham-bold();
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        /* Text style for "c, redits" */
+        letter-spacing: 2.1px;
+    }
+}
+.copyright {
+    margin-top: 1rem;
+    p {
+        color: #373737;
+        .gotham-bold();
+        font-size: 1.4rem;
+        letter-spacing: 2.1px;
+    }
+}
+
+.prev {
+    position: absolute;
+    top: 110%;
+    left: 52%;
+    transform: scaleY(-110%);
+    z-index: 99;
+    background: url(../img/fa-angle-left_copia.svg) no-repeat;
+    border: 0px;
+    width: 2rem;
+    height: 2rem;
+}
+.next {
+    background: url(../img/fa-angle-right_copia.svg) no-repeat;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 110%;
+    transform: scaleY(-110%);
+    left: 55%;
+}
+
+
+
+
+@media (max-width: 426px) {
+    .navbar-item {
+        padding-left: 0;
+        font-size: 1rem;
+    }
+    .header-title {
+        margin-top: 2rem;
+        h1 {
+            font-size: 2.6rem;
+        }
+    }
+    .box-4 {
+        min-height: 50rem;
+        .subs-title {
+            margin-top: 20rem;
+        }
+    }
+    .apps-btn-apple_fa {
+    i {
+            margin-top: 0.4rem;
+            line-height: 0rem;
+        }
+    }
+    footer img {
+        margin-bottom: 2rem;
+    }
+    .prev {
+        opacity: 0;
+    }
+    .next {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .apps-btn_first {
+        padding: 0;
+    }
+    .app-btn_second button{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 769px) {
+    .navbar-item {
+        li {
+            display: block;
+            padding: 2rem;
+        }
+    }
+    header {
+        min-height: 70rem;
+    }
+    .header-title {
+        margin-top: 10rem;
+    }
+    .social-icon {
+        margin-top: 10rem;
+    }
+    .btn-box-1 button{
+        display: inline;
+        text-align: center;
+    }
+    .box-4 {
+        min-height: 60rem;
+        .subs-title {
+            margin-top: 25rem;
+        }
+    }
+    .apps-btn_first {
+        display: block;
+    }
+    .app-btn_second button{
+        margin-bottom: 2rem;
+    }
+    .apps-btn-apple {
+        padding: 0;
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 993px) {
+    .navbar-item {
+        li {
+            padding: 1rem;
+        }
+    }
+    .slider_item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 2rem;
+    }
+    .prev {
+        top: 75%;
+        left: 80%;
+    }
+    .next {
+        top: 75%;
+        left: 90%;
+    }
+}
+
+@media (max-width: 1201px) {
+    .phone-hand {
+        img {
+            width: 500px;
+        }
+    }
+}
+@media (max-width: 321px) {
+    .navbar-item {
+        font-size: 0.5rem;
+    }
+    .text-container {
+        margin-top: 0rem;
+        max-width: 320px;
+        max-height: 50rem;
+    }
+    .input-subs {
+        width: 20rem;
+        padding: 0;
+    }
+    .app-btn_second {
+        padding-left: 0;
+    }
+    .footer-item {
+        li {
+            font-size: 1rem;            
+        }
+    }
+}
